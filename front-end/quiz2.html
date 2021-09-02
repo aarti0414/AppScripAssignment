@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia app</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="quiz">
+            <div class="quiz_header">
+                <div class="quiz_user">
+                    <h4>Trivia</h4>
+                </div>
+            </div>
+            
+            <div class="quiz_body">
+                <h2>What are the colors in the Indian national flag?</h2>
+                <ul class="option_group">
+                    <input onclick="getans2(event)" type="checkbox" name="white" >
+                    <label for="">white</label><br>
+                    <input onclick="getans2(event)" type="checkbox" name="yellow" >
+                    <label for="">Yellow</label><br>
+                    <input onclick="getans2(event)" type="checkbox" name="orange" >
+                    <label for="">Orange</label><br>
+                    <input onclick="getans2(event)" type="checkbox" name="green">
+                    <label for="">Green</label><br>
+
+                    <!-- <li  class="option" name="question1" value="Sachin Tendulkar">Sachin Tendulkar</li>
+                    <li class="option" name="question1" value="Virat Kolli">Virat Kolli</li>
+                    <li class="option" name="question1" value="Adam Gilchrist">Adam Gilchrist</li>
+                    <li class="option" name="question1" value="Jacqurs Kallis">Jacqurs Kallis</li> -->
+
+                </ul>
+                <div class="button">
+                    <button onclick="submit()" class="col-2 btn_next">Finish</button>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia app</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="quiz">
+            <div class="quiz_header">
+                <div class="quiz_user">
+                    <h3>✔Trivia App</h4>
+                 </div>
+            </div>
+            
+            <div class="quiz_body">
+                <h2>Who is the best cricketer in the world?</h2>
+                <ul class="option_group">
+                    <input  onclick="getans1(event)" type="radio" name="answer" value="Sachin">
+                    <label for="">sachin</label>
+                    <input  onclick="getans1(event)" type="radio" name="answer" value="Virat">
+                    <label for="">Virat</label>
+                    <input  onclick="getans1(event)" type="radio" name="answer" value="Adam">
+                    <label for="">Adam</label>
+                    <input  onclick="getans1(event)" type="radio" name="answer" value="Kallis">
+                    <label for="">Kallis</label>
+
+                    <!-- <li  class="option" name="question1" value="Sachin Tendulkar">Sachin Tendulkar</li>
+                    <li class="option" name="question1" value="Virat Kolli">Virat Kolli</li>
+                    <li class="option" name="question1" value="Adam Gilchrist">Adam Gilchrist</li>
+                    <li class="option" name="question1" value="Jacqurs Kallis">Jacqurs Kallis</li> -->
+
+                </ul>
+                <button  class="btn_next" onclick="location.href=('quiz2.html')">Next -></button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
